@@ -1,8 +1,8 @@
 import React from 'react'
 
 const BRAND = {
-  // Move your image into /public and reference it at "/btcatchall-logo.png"
-  logoUrl: '/btcatchall-logo.png',
+  // Use lowercase for public asset paths for best cross-platform compatibility
+  logoUrl: '/btcatchalllogo.png',
   logoLink: 'https://btcatchall.ai',
 }
 
@@ -66,7 +66,7 @@ const SAMPLE_VENDORS = {
     { name: 'RanchPay Systems', url: 'https://ranchpay.com' },
   ],
   blockchain: [
-    { name: 'e-Livestock', url: 'https://e-livestock.com', bannerUrl: '/e-livestock-banner.png' },
+    { name: 'e-Livestock', url: 'https://e-livestock.com', bannerUrl: '/elg_banner_2025.avif' },
     { name: 'AgriBlockChain', url: 'https://agriblockchain.com' },
     { name: 'BeefChain', url: 'https://beefchain.com' },
   ],
