@@ -19,15 +19,14 @@ const COLUMN_GROUPS = [
     title: 'Column 2',
     categories: [
       { key: 'equipment', label: 'Equipment' },
-      { key: 'animal-health', label: 'Animal health' },
-      { key: 'fintech', label: 'Fintech' },
+      { key: 'fintech', label: 'Fintech & Ranch Management Firms' },
     ],
   },
   {
     title: 'Column 3',
     categories: [
       { key: 'blockchain', label: 'Blockchain' },
-      { key: 'management-software', label: 'Management Software' },
+      { key: 'animal-health', label: 'Animal health' },
       { key: 'genetics', label: 'Genetics' },
     ],
   },
@@ -35,58 +34,116 @@ const COLUMN_GROUPS = [
 
 const SAMPLE_VENDORS = {
   drones: [
-    { name: 'SkyPasture', url: 'https://skypasture.com' },
-    { name: 'AeroAgro', url: 'https://aeroagro.com' },
-    { name: 'DroneCattle', url: 'https://dronecattle.com' },
+    { name: 'BeeFree Agro', url: 'https://beefreeagro.com' },
+    { name: 'Cargill CattleView', url: 'https://cargill.com/story/cattle-view' },
+    { name: 'ZenaDrone', url: 'https://zenadrone.com' },
+    { name: 'DSLRPros', url: 'https://dslrpros.com' },
+    { name: 'Drone-Hand', url: 'https://drone-hand.com' },
+    { name: 'DJI Agriculture', url: 'https://ag.dji.com' },
+    { name: 'Wildlife Drones', url: 'https://wildlifedrones.net' },
+    { name: 'GAO RFID', url: 'https://gaorfid.com' },
+    { name: 'Advexure', url: 'https://advexure.com' },
+    { name: 'FlyGuys', url: 'https://flyguys.com' },
   ],
   gps: [
-    { name: '701X', url: 'https://701x.com' },
-    { name: 'GPS Ranch Track', url: 'https://gpsranchtrack.com' },
-    { name: 'CattleTagPro', url: 'https://cattletagpro.com' },
-    { name: 'AgriGPS Solutions', url: 'https://agrigpssolutions.com' },
+    { name: '701x', url: 'https://701x.com' },
+    { name: 'LoneStar Tracking', url: 'https://lonestartracking.com' },
+    { name: 'mOOvement', url: 'https://moovement.com.au' },
+    { name: 'Ceres Tag', url: 'https://cerestag.com' },
+    { name: 'Fitcows', url: 'https://fitcows.com' },
+    { name: 'Chipsafer', url: 'https://chipsafer.com' },
+    { name: 'Digital Matter', url: 'https://digitalmatter.com' },
+    { name: 'Smart Paddock', url: 'https://smartpaddock.com' },
+    { name: 'Abeeway', url: 'https://abeeway.com' },
+    { name: 'GlobalSat', url: 'https://embeddedworks.net/product/sens707/' },
   ],
   'virtual-fencing': [
-    { name: 'Vence', url: 'https://vence.io' },
-    { name: 'NoFence', url: 'https://nofence.com' },
-    { name: 'eShepherd', url: 'https://eshepherd.com' },
+    { name: '701x', url: 'https://701x.com' },
+    { name: 'Vence', url: 'https://merck-animal-health-usa.com/species/cattle/vence' },
+    { name: 'Nofence', url: 'https://nofence.no' },
+    { name: 'Halter', url: 'https://halterhq.com' },
+    { name: 'eShepherd (Gallagher)', url: 'https://am.gallagher.com/en/Solutions/eShepherd' },
   ],
   equipment: [
-    { name: 'TankWatch', url: 'https://tankwatch.com' },
-    { name: 'RanchEquipCo', url: 'https://ranchequipco.com' },
-    { name: 'BeefTech Machinery', url: 'https://beeftechmachinery.com' },
+    { name: 'Arrowquip', url: 'https://arrowquip.com' },
+    { name: 'Moly Manufacturing', url: 'https://molymfg.com' },
+    { name: 'Priefert', url: 'https://priefert.com' },
+    { name: 'Powder River', url: 'https://powderriver.com' },
+    { name: 'For-Most', url: 'https://zeitlow.com' },
+    { name: 'Real-Tuff', url: 'https://realtuff.com' },
+    { name: 'Tarter', url: 'https://tarterusa.com' },
+    { name: 'IAE', url: 'https://iae.co.uk' },
+    { name: 'Sioux Steel', url: 'https://siouxsteel.com' },
+    { name: 'John Deere', url: 'https://deere.com' },
+    { name: 'Case IH', url: 'https://caseih.com' },
+    { name: 'Caterpillar', url: 'https://cat.com' },
+    { name: 'AGCO (Massey Ferguson)', url: 'https://agcocorp.com' },
   ],
   'animal-health': [
-    { name: 'HerdVitals', url: 'https://herdvitals.com' },
-    { name: 'CattleCare Health', url: 'https://cattlecarehealth.com' },
-    { name: 'VetAgro Solutions', url: 'https://vetagrosolutions.com' },
+    { name: 'Zoetis', url: 'https://zoetis.com' },
+    { name: 'Merck Animal Health', url: 'https://merck-animal-health-usa.com' },
+    { name: 'Elanco', url: 'https://elanco.com' },
+    { name: 'Boehringer Ingelheim', url: 'https://bi-animalhealth.com' },
+    { name: 'Axiota', url: 'https://axiota.com' },
+    { name: 'Animal Health International', url: 'https://animalhealthinternational.com' },
+    { name: 'MWI Animal Health', url: 'https://mwiah.com' },
+    { name: 'Phibro', url: 'https://pahc.com' },
+    { name: 'Santa Cruz Animal Health', url: 'https://scahealth.com' },
+    { name: 'PBS Animal Health', url: 'https://pbsanimalhealth.com' },
+    { name: 'Valley Vet Supply', url: 'https://valleyvet.com' },
+    { name: 'Heartland Vet Supply', url: 'https://heartlandvetsupply.com' },
   ],
   fintech: [
-    { name: 'CattleLedger', url: 'https://cattleledger.com' },
-    { name: 'AgriFinance Pro', url: 'https://agrifinancepro.com' },
-    { name: 'RanchPay Systems', url: 'https://ranchpay.com' },
+    { name: 'RanchVision', url: 'https://ranchvision.com' },
+    { name: 'Farmbrite', url: 'https://farmbrite.com' },
+    { name: 'Bushel Farm', url: 'https://bushelfarm.com' },
+    { name: 'FarmRaise', url: 'https://farmraise.com' },
+    { name: 'FINPACK', url: 'https://finpack.umn.edu' },
+    { name: "Farmer's Wallet", url: 'https://play.google.com/store/apps/details?id=com.bivatec.farmerswallet' },
+    { name: 'Agri-Access', url: 'https://agri-access.com' },
+    { name: 'CattleMax', url: 'https://cattlemax.com' },
+    { name: 'Breedr', url: 'https://breedr.co' },
+    { name: 'Abecas Insight', url: 'https://argosoftware.com/solutions/agribusiness-software-for-growers/farm-management/' },
+    { name: 'Fintech Farm', url: 'https://fintech-farm.com' },
+    { name: 'Pasture.io (MyFarm)', url: 'https://pasture.io' },
+    { name: 'Farmonaut', url: 'https://farmonaut.com' },
   ],
+  'management-software': [],
   blockchain: [
     { name: 'e-Livestock', url: 'https://e-livestock.com', bannerUrl: '/elg_banner_2025.avif' },
     { name: 'AgriBlockChain', url: 'https://agriblockchain.com' },
     { name: 'BeefChain', url: 'https://beefchain.com' },
   ],
-  'management-software': [
-    { name: 'AgriManage Pro', url: 'https://agrimanagepro.com' },
-    { name: 'RanchManager360', url: 'https://ranchmanager360.com' },
-    { name: 'BeefOps', url: 'https://beefops.com' },
-    { name: 'RanchVision', url: 'https://ranchvision.com' },
-  ],
   genetics: [
-    { name: 'GeneticBeef Solutions', url: 'https://geneticbeef.com' },
-    { name: 'CRISPR Cattle Co', url: 'https://crisprcattleco.com' },
-    { name: 'EliteBeef Genetics', url: 'https://elitebeefgenetics.com' },
-    { name: 'ABS Global', url: 'https://www.absglobal.com' },
-    { name: 'Select Sires', url: 'https://www.selectsires.com' },
+    { name: 'ABS Global', url: 'https://absglobal.com' },
+    { name: 'GENEX', url: 'https://genex.coop' },
+    { name: 'Select Sires', url: 'https://selectsires.com' },
+    { name: 'Alta Genetics', url: 'https://us.altagenetics.com' },
+    { name: 'ST Genetics', url: 'https://stgen.com' },
+    { name: 'VikingGenetics', url: 'https://vikinggenetics.us' },
+    { name: 'Zoetis', url: 'https://beefgenetics.com' },
+    { name: 'Vytelle', url: 'https://vytelle.com' },
+    { name: 'Peak Genetics', url: 'https://peakgenetics.com' },
+    { name: 'SEK Genetics', url: 'https://sekgenetics.com' },
+    { name: 'Premier Select Sires', url: 'https://premierselectsires.com' },
+    { name: 'Hendrix Genetics', url: 'https://hendrix-genetics.com' },
+    { name: 'Trans Ova Genetics', url: 'https://transova.com' },
+    { name: 'Neogen', url: 'https://neogen.com' },
+    { name: 'Jorgensen Farms', url: 'https://jorgensenfarms.com' },
+    { name: 'Premium Beef Genetics', url: 'https://premiumbeefgenetics.com' },
   ],
   'bt-advisors': [
-    { name: 'RanchTech Consulting', url: 'https://ranchtechconsulting.com' },
-    { name: 'AgriTech Advisors Group', url: 'https://agritechadvisors.com' },
-    { name: 'SmartRanch Solutions', url: 'https://smartranchsolutions.com' },
+    { name: 'Global Beef Consultants', url: 'https://globalbeefllc.com' },
+    { name: 'Gira', url: 'https://girafood.com' },
+    { name: 'Alltech', url: 'https://alltech.com' },
+    { name: 'Royal De Heus', url: 'https://deheus.com' },
+    { name: 'Trouw Nutrition', url: 'https://trouwnutrition.com' },
+    { name: 'Farrelly Mitchell', url: 'https://farrellymitchell.com/livestock-consulting' },
+    { name: 'Orrani Consulting', url: 'https://orrani.com/key-sectors/meat-and-poultry' },
+    { name: 'Great Plains Livestock Consulting', url: 'https://greatplainslivestockconsulting.com' },
+    { name: 'IMI Global', url: 'https://imiglobal.com' },
+    { name: 'Global Roundtable for Sustainable Beef (GRSB)', url: 'https://grsbeef.org' },
+    { name: 'Oklahoma Beef Consultants', url: 'https://okbeefconsultants.com' },
   ],
   'bt-think-tank': [
     { name: 'Texas A&M University', url: 'https://animalscience.tamu.edu/research/beef-cattle/' },
@@ -199,7 +256,33 @@ export default function BTCatchallCraigslistAll() {
         {/* YouTube Sidebar */}
         <aside className="lg:col-span-1">
           <div className="sticky top-4 border rounded-md overflow-hidden">
-            <div className="p-3 text-sm font-semibold border-b">YouTube of the Week</div>
+            <div className="p-3 text-sm font-semibold border-b">BT Tube</div>
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${getYouTubeId()}`}
+                title={YOUTUBE_OF_WEEK.title}
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-3 text-sm text-gray-700">{YOUTUBE_OF_WEEK.title}</div>
+
+            <div className="p-3 text-sm font-semibold border-b">Tech Tube</div>
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${getYouTubeId()}`}
+                title={YOUTUBE_OF_WEEK.title}
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-3 text-sm text-gray-700">{YOUTUBE_OF_WEEK.title}</div>
+
+            <div className="p-3 text-sm font-semibold border-b">BT Research updates</div>
             <div className="aspect-video">
               <iframe
                 className="w-full h-full"
