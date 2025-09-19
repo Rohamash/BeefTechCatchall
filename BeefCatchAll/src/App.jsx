@@ -174,19 +174,32 @@ const YOUTUBE_OF_WEEK = {
     "Allan Savory: How to green the world's deserts and reverse climate change (TED)",
   youtubeId: 'vpTHi7O66pI',
 }
+const BT_Tube = {
+  title:
+    "Allan Savory: How to green the world's deserts and reverse climate change (TED)",
+  youtubeId: 'vpTHi7O66pI',
+}
+const Tech_Tube = {
+  title:
+    "How Stanford Teaches AI-Powered Creativity in Just 13 MinutesㅣJeremy Utley",
+  youtubeId: 'wv779vmyPVY',
+}
+
+// Use this constant to control the search param for the YouTube video
+const SEARCH_YOUTUBE_ID = 'yt';
 
 function getYouTubeId() {
   try {
-    const params = new URLSearchParams(window.location.search)
-    const fromQuery = params.get('yt')
+    const params = new URLSearchParams(window.location.search);
+    const fromQuery = params.get(SEARCH_YOUTUBE_ID);
     if (fromQuery) {
-      localStorage.setItem('ytPick', fromQuery)
-      return fromQuery
+      localStorage.setItem('ytPick', fromQuery);
+      return fromQuery;
     }
-    const saved = localStorage.getItem('ytPick')
-    return saved || YOUTUBE_OF_WEEK.youtubeId
+    const saved = localStorage.getItem('ytPick');
+    return saved || YOUTUBE_OF_WEEK.youtubeId;
   } catch (e) {
-    return YOUTUBE_OF_WEEK.youtubeId
+    return YOUTUBE_OF_WEEK.youtubeId;
   }
 }
 
@@ -260,33 +273,33 @@ export default function BTCatchallCraigslistAll() {
             <div className="aspect-video">
               <iframe
                 className="w-full h-full"
-                src={`https://www.youtube.com/embed/${getYouTubeId()}`}
-                title={YOUTUBE_OF_WEEK.title}
+                src={`https://www.youtube.com/embed/${BT_Tube.youtubeId}`}
+                title={BT_Tube.title}
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>
-            <div className="p-3 text-sm text-gray-700">{YOUTUBE_OF_WEEK.title}</div>
+            <div className="p-3 text-sm text-gray-700">{BT_Tube.title}</div>
 
             <div className="p-3 text-sm font-semibold border-b">Tech Tube</div>
             <div className="aspect-video">
               <iframe
                 className="w-full h-full"
-                src={`https://www.youtube.com/embed/${getYouTubeId()}`}
-                title={YOUTUBE_OF_WEEK.title}
+                src={`https://www.youtube.com/embed/${Tech_Tube.youtubeId}`}
+                title={Tech_Tube.title}
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>
-            <div className="p-3 text-sm text-gray-700">{YOUTUBE_OF_WEEK.title}</div>
+            <div className="p-3 text-sm text-gray-700">{Tech_Tube.title}</div>
 
             <div className="p-3 text-sm font-semibold border-b">BT Research updates</div>
             <div className="aspect-video">
               <iframe
                 className="w-full h-full"
-                src={`https://www.youtube.com/embed/${getYouTubeId()}`}
+                src={`https://www.youtube.com/embed/${YOUTUBE_OF_WEEK.youtubeId}`}
                 title={YOUTUBE_OF_WEEK.title}
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
