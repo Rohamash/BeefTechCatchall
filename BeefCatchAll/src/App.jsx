@@ -176,8 +176,8 @@ const YOUTUBE_OF_WEEK = {
 }
 const BT_Tube = {
   title:
-    "Allan Savory: How to green the world's deserts and reverse climate change (TED)",
-  youtubeId: 'vpTHi7O66pI',
+    "Cattle Are Getting High Tech GPS Fencing",
+  youtubeId: 'huaJuq5ZxPc',
 }
 const Tech_Tube = {
   title:
