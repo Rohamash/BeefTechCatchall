@@ -167,6 +167,11 @@ const SAMPLE_VENDORS = {
     { name: 'University of Illinois Urbana-Champaign', url: 'https://illinois.edu/' },
     { name: 'Michigan State University', url: 'https://msu.edu/' },
   ],
+  'bt-update': [
+    { name: 'University of Nebraska–Lincoln / USDA-ARS / University of Kentucky — PNAS Nexus (2023): "First gene-edited calf with reduced susceptibility to a major viral pathogen"', url: 'https://pubmed.ncbi.nlm.nih.gov/37181049/' },
+    { name: 'University of Nebraska–Lincoln / USDA-ARS — Viruses (2025): "CD46 Gene Editing Confers Ex Vivo BVDV Resistance in Fibroblasts from Cloned Angus Calves"', url: 'https://pubmed.ncbi.nlm.nih.gov/40573367/' },
+    { name: 'University of Tennessee — M.S. Thesis (2025): "CRISPR/Cas9 editing of IGF2 and MSTN to enhance productivity"', url: 'https://trace.tennessee.edu/utk_gradthes/14494' },
+  ],
 }
 
 const YOUTUBE_OF_WEEK = {
@@ -294,22 +299,32 @@ export default function BTCatchallCraigslistAll() {
               />
             </div>
             <div className="p-3 text-sm text-gray-700">{Tech_Tube.title}</div>
-
-            <div className="p-3 text-sm font-semibold border-b">BT Research updates</div>
-            <div className="aspect-video">
-              <iframe
-                className="w-full h-full"
-                src={`https://www.youtube.com/embed/${YOUTUBE_OF_WEEK.youtubeId}`}
-                title={YOUTUBE_OF_WEEK.title}
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-            <div className="p-3 text-sm text-gray-700">{YOUTUBE_OF_WEEK.title}</div>
           </div>
         </aside>
       </main>
+
+      {/* BT Update */}
+      <section id="bt-update" className="mx-auto max-w-6xl px-4 pb-6">
+        <h2 className="text-lg font-semibold mb-2">BT Update</h2>
+        <p className="text-sm text-gray-600 mb-3">Latest research updates from leading institutions.</p>
+        <ul className="grid grid-cols-1 md:grid-cols-1 gap-4 text-[15px]">
+          {(SAMPLE_VENDORS['bt-update'] || []).map((item) => (
+            <li key={item.url} className="py-2">
+              <div className="flex flex-col">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-blue-700 hover:underline"
+                >
+                  {item.name}
+                </a>
+                <span className="text-gray-600 break-all">{item.url}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       {/* BT Advisors */}
       <section id="bt-advisors" className="mx-auto max-w-6xl px-4 pb-6">
