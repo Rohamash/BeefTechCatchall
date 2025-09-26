@@ -305,7 +305,7 @@ export default function BTCatchallCraigslistAll() {
 
       {/* BT Update */}
       <section id="bt-update" className="mx-auto max-w-6xl px-4 pb-6">
-        <h2 className="text-lg font-semibold mb-2">BT Update</h2>
+        <h2 className="text-lg font-semibold mb-2">BT Update - Crispr</h2>
         <p className="text-sm text-gray-600 mb-3">Latest research updates from leading institutions.</p>
         <ul className="grid grid-cols-1 md:grid-cols-1 gap-4 text-[15px]">
           {(SAMPLE_VENDORS['bt-update'] || []).map((item) => (
