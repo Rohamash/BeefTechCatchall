@@ -186,8 +186,8 @@ const BT_Tube = {
 }
 const Tech_Tube = {
   title:
-    "How Stanford Teaches AI-Powered Creativity in Just 13 MinutesㅣJeremy Utley",
-  youtubeId: 'wv779vmyPVY',
+    "How technology is helping solve farming’s biggest issues | WOOD TV8",
+  youtubeId: 'EZ77aLYlXco',
 }
 
 // Use this constant to control the search param for the YouTube video
